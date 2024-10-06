@@ -1,88 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Dia Dos Namorados</title>
-
-    <style>
-        body{
-            background-color: red;
-        }
-
-        .painel{
-            margin: auto;
-            background-color: white;
-            width: 500px;
-            height: 500px;
-            border-radius: 20px;
-            text-align: center;
-            padding-top: 50px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        #sim{
-            height: 40px;
-            width: 60px;
-            background-color: red;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: -50px;
-        }
-        #nao{
-            position: absolute;
-            height: 40px;
-            width: 60px;
-            background-color: red;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: 10px;
-        }
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-    <div class="painel">
-        <h1> Eu te amo muito Princesa
-        </h1>
-
-        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
-
-        <h2>Quanto você me ama? </h2>
-        
-
-        <a href="https://youtu.be/0mJMW2CzTiA?si=XNicY0agZgCoivD0"><button id="sim" > Muito! </button></a>
-        <button onmouseover="fuja()" id="nao"> Prouco! </button>
-        
-        
+  <div class="presente">
+    <div class="caixa">
+      <div class="fita"></div>
     </div>
+    <div class="container">
 
-    <script>
-        function fuja(){
-            var botaoNao = document.getElementById("nao")
+      <div class="laco">
+        <div class="volta esq"></div>
+        <div class="volta"></div>
+      </div>
 
-            var larguraJanela = window.innerWidth;
-            var alturaJanela = window.innerHeight;
+      <div class="topo">
+        <div class="fita"></div>
+      </div>
+    </div>
+  </div>
 
-            var maxX = larguraJanela - botaoNao.offsetWidth;
-            var maxY = alturaJanela - botaoNao.offsetHeight;
+    <a href="./index.html">Clique aqui para abrir</a>
 
-            var aleatorioX = Math.floor(Math.random() * maxX);
-            var aleatorioY = Math.floor(Math.random() * maxY);
-
-            botaoNao.style.left = aleatorioX + "px";
-            botaoNao.style.top = aleatorioY + "px";
-
-
-        }
-    </script>
-
-
-
-    
 </body>
 </html>
